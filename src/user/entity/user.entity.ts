@@ -30,14 +30,14 @@ export default class User extends RestEntity {
    *
    * @type {string}
    */
-  @Column()
+  @Column({})
   displayName: string;
 
   /**
    * User scripts.
    *
-   * @type {string[]}
+   * @type {any[]}
    */
   @Column({ array: true })
-  scripts: string[];
+  scripts: any[];
 }
